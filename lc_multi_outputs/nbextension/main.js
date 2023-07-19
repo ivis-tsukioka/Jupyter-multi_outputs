@@ -195,8 +195,8 @@ define([
     function create_pin_button(cell, output_area)
     {
         var meta = cell.metadata.disable_pins
-        log.console("meta")
-        log.console(meta)
+        console.log("meta")
+        console.log(meta)
         if (meta) {
 
         } else {
