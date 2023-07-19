@@ -194,12 +194,10 @@ define([
 
     function create_pin_button(cell, output_area)
     {
-        var meta = cell.metadata.disable_pins
-        console.log("meta")
-        console.log(meta)
-        if (meta) {
-
-        } else {
+        var disable_pins = cell.metadata.disable_pins
+        console.log("disable_pins")
+        console.log(disable_pins)
+        if (disable_pins === undefined) {
             var container = $('<div/>')
                     .addClass('multi-outputs-ui')
                     .appendTo(output_area.wrapper.find('.out_prompt_overlay'));
